@@ -1,5 +1,6 @@
 export class Message {
-  public id: string;
+  // tslint:disable-next-line:variable-name
+  public _id: string;
   public title: string;
   public messages: string;
 }

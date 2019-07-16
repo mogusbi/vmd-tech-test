@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
@@ -8,7 +9,7 @@ import { MessageService } from './shared/message.service';
 
 @NgModule({
   declarations: [MessagesComponent],
-  imports: [IonicModule, RouterModule.forChild(MessagesRouting)],
+  imports: [CommonModule, IonicModule, RouterModule.forChild(MessagesRouting)],
   providers: [MessageResolver, MessageService],
 })
 export class MessagesModule {}
