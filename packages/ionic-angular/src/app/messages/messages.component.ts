@@ -8,7 +8,7 @@ import { Message } from './shared/message.model';
   selector: 'messages',
   template: `
     <ion-header>
-      <ion-toolbar>
+      <ion-toolbar color="primary">
         <ion-title>
           Messages
         </ion-title>
@@ -19,7 +19,7 @@ import { Message } from './shared/message.model';
       <ion-list>
         <ion-item
           *ngFor="let message of messages$ | async"
-          [href]="generateLink(message._id)"
+          [routerLink]="generateLink(message._id)"
         >
           <ion-label>{{ message.title }}</ion-label>
         </ion-item>

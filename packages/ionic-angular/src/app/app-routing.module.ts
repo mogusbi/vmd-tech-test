@@ -9,15 +9,8 @@ const routes: Routes = [
   },
   {
     path: 'messages',
+    pathMatch: 'prefix',
     loadChildren: './messages/messages.module#MessagesModule',
-  },
-  {
-    path: 'home',
-    loadChildren: './home/home.module#HomePageModule',
-  },
-  {
-    path: 'list',
-    loadChildren: './list/list.module#ListPageModule',
   },
 ];
 
