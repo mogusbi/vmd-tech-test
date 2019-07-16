@@ -12,4 +12,8 @@ The API requires a Mongo database. You can launch the database via Docker using 
 
 ### API
 
-Once the database is up and running, you can fire up the API by running `npm start -- --scope=@vmd/api`
+Once the database is up and running, you can fire up the API by running `npm start -- --scope=@vmd/api`. The API will be running at `http://localhost:8080`.
+
+### Ionic (Angular)
+
+You can launch the Ionic Angular application by running `npm start -- --scope=@vmd/ionic-angular`
