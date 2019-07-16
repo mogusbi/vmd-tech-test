@@ -12,6 +12,11 @@ import { Message } from './shared/message.model';
         <ion-title>
           Messages
         </ion-title>
+        <ion-buttons slot="primary">
+          <ion-button routerLink="/messages/create">
+            <ion-icon slot="end" name="create"></ion-icon>
+          </ion-button>
+        </ion-buttons>
       </ion-toolbar>
     </ion-header>
 
@@ -37,6 +42,6 @@ export class MessagesComponent {
   constructor(private activatedRoute: ActivatedRoute) {}
 
   public generateLink(id: string): string {
-    return `/messages/${id}`;
+    return `/messages/view/${id}`;
   }
 }
