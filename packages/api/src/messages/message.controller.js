@@ -23,7 +23,7 @@ exports.create = async (req, res) => {
 exports.list = async (req, res) => {
   try {
     const { skip, limit } = req.query;
-    const result = await listMessages(skip, limit);
+    const result = await listMessages(parseInt(skip, 10), parseInt(limit, 10));
 
     if (result) {
       res.json({
