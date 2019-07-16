@@ -26,7 +26,9 @@ exports.list = async (req, res) => {
     const result = await listMessages(skip, limit);
 
     if (result) {
-      res.body(result);
+      res.json({
+        items: result,
+      });
     } else {
       res.status(204);
     }

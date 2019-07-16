@@ -1,4 +1,4 @@
-const { urlencoded } = require('body-parser');
+const { json } = require('body-parser');
 const express = require('express');
 const helmet = require('helmet');
 const morgan = require('morgan');
@@ -9,8 +9,8 @@ const app = express();
 app.use(morgan('dev'));
 app.use(helmet());
 app.use(
-  urlencoded({
-    extended: false,
+  json({
+    limit: '1mb',
   })
 );
 

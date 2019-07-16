@@ -7,6 +7,7 @@
     "bootstrap": "lerna bootstrap",
     "clean": "lerna clean",
     "create": "lerna create",
+    "env": "lerna run env --stream --scope=@vmd/api",
     "lerna": "lerna",
     "postinstall": "npm run bootstrap",
     "remove": "lerna run remove --stream",
